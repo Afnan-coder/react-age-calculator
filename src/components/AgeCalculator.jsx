@@ -11,6 +11,10 @@ const AgeCalculator = () => {
         const today = new Date()
         const Userbirthdate = new Date(birthDate)
         const age = today.getFullYear() - Userbirthdate.getFullYear()
+        const monthDiff = today.getMonth() - Userbirthdate.getMonth()
+        if(monthDiff<0 || (monthDiff === 0 && today.getDate()<Userbirthdate.getDate())){
+            age--;
+        }
         setAge(age)
 
     }
@@ -38,7 +42,7 @@ const AgeCalculator = () => {
                     <div className="Container_middle_para">
                         <h1>Your Age Is</h1>
                     </div>
-                    <h1>{age}</h1>
+                    <h1>{age>0?`${age}`: ''}</h1>
                 </div>
             </div>
         </div>
