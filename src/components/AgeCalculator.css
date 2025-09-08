@@ -1,0 +1,113 @@
+/* Container */
+.Container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.container_title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.para {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+/* Middle Layout */
+.Container_middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Left & Right Panels */
+.right,
+.left {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.right h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Input */
+.date {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.button_div {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.button-65 {
+  background: #fff;
+  color: #2575fc;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.button-65:hover {
+  background: #2575fc;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Age Result */
+.Container_middle_para h1 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.left h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffeb3b;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Container_middle {
+    flex-direction: column;
+  }
+}
