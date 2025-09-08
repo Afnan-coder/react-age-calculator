@@ -10,7 +10,7 @@ const AgeCalculator = () => {
     const calculateAge = ()=>{
         const today = new Date()
         const Userbirthdate = new Date(birthDate)
-        const age = today.getFullYear() - Userbirthdate.getFullYear()
+        let age = today.getFullYear() - Userbirthdate.getFullYear()
         const monthDiff = today.getMonth() - Userbirthdate.getMonth()
         if(monthDiff<0 || (monthDiff === 0 && today.getDate()<Userbirthdate.getDate())){
             age--;
@@ -20,7 +20,7 @@ const AgeCalculator = () => {
     }
 
     const Reset = ()=>{
-
+        window.location.reload()
     }
 
     return (
